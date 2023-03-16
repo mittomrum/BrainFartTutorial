@@ -48,6 +48,12 @@ jobs:
        with:
          name: build-WebGL
          path: build/WebGL
+
+      - name: Save cache
+        uses: actions/cache@v2
+        with:
+          path: build-WebGL
+          key: ${{ runner.os }}-WebGL-${{ hashFiles('**/lockfiles') }}
          
  deployPages:
    needs: buildWebGL
