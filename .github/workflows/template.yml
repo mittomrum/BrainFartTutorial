@@ -1,6 +1,6 @@
 name: GameCI Template 🎮
 
-on: push
+on: workflow_dispatch
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -77,6 +77,6 @@ jobs:
          BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_API_KEY }}
          CHANNEL: HTML
          ITCH_GAME: CICD-Demo
-         ITCH_USER: TomRumDemo
+         ITCH_USER: Mittomrum
          BRANCH: itch-io
          PACKAGE: build/WebGL
