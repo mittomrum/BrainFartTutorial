@@ -1,4 +1,4 @@
-name: build 🎮
+name: building 🎮
 
 on: workflow_dispatch
 
