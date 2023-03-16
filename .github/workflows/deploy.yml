@@ -6,13 +6,12 @@ env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
 jobs:
-  Verify build:
+
   - name: Verify build directory
   run: |
     pwd
     ls -R build
   working-directory: build
-
 
   deployPages:
     name: Deploy to Itch.io 🚀
